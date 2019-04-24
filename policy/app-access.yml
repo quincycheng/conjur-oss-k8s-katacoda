@@ -11,6 +11,6 @@
       - !variable url
      
     - !permit
-      role: !layer /orquestador-ajustadores
+      role: !layer /test-app
       privileges: [ read, execute ]
       resources: *variables

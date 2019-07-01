@@ -18,7 +18,12 @@
       id: test-app/service_account/test-app-conjur
       annotations:
         kubernetes/authentication-container-name: authenticator
-        openshift: "true"
+        kubernetes: "true"
+    - !host
+      id: test-app/service_account/test-app-secretless
+      annotations:
+        kubernetes/authentication-container-name: secretless
+        kubernetes: "true"
 
   - !grant
     role: !layer
